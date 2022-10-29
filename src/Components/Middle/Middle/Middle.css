@@ -1,5 +1,16 @@
-.middle{
-display: flex;
+.middle {
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+@media screen and ( max-width: 1200px){
+    .middle{
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+}
+@media screen and ( max-width: 768px){
+.middle{
+    align-items: center;
+}
 }

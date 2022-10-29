@@ -1,8 +1,26 @@
-.cards{
+.cards {
     display: flex;
-    gap: 10px ;
+    gap: 10px;
 }
-.single-card-container{
+
+.single-card-container {
     width: 100%;
 
+}
+
+@media screen and ( max-width: 1200px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .single-card-container {
+        height: 9rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and ( max-width: 768px){
+.cards{
+    width: 90%;
+}
 }

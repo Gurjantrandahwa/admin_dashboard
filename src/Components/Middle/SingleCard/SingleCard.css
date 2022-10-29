@@ -72,10 +72,10 @@
 
 .expanded-card {
     position: absolute;
-    width: 57%;
-    height: 70vh;
+    width: 53%;
+    height: 65vh;
     z-index: 9;
-    left: 12.5rem;
+    left: 13.5rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -90,16 +90,34 @@
     color: white;
     font-size: 22px;
 }
-.expanded-card>span:nth-of-type(1){
+
+.expanded-card > span:nth-of-type(1) {
     color: white;
     font-size: 26px;
     font-weight: bold;
-    text-shadow: 0 0 15px white ;
+    text-shadow: 0 0 15px white;
 }
-.expanded-card>span:nth-of-type(2){
-    color: rgb(223,222,222);
+
+.expanded-card > span:nth-of-type(2) {
+    color: rgb(223, 222, 222);
     font-size: 16px;
 }
-.chart-container{
+
+.chart-container {
     width: 70%;
+}
+@media screen and ( max-width: 1200px){
+    .expanded-card{
+        top: 3rem;
+        height: 45vh;
+        left: 6rem;
+    }
+}
+@media screen and ( max-width: 768px){
+.expanded-card{
+    top: 8rem;
+    height: 50%;
+    left: 15px;
+    width: 80%;
+}
 }
