@@ -64,7 +64,7 @@ export default function Sidebar() {
 
                     ].map((value, index) => {
                         return <div key={index}
-                                    className={selected === index ? "menu-item active" : "menu-item"}
+                                    className={selected === index ? "active" : "non-active"}
                                     onClick={() => setSelected(index)}>
                             <div>{value.icon} </div>
                             <span>{value.header}</span>
